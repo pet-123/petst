@@ -1,0 +1,225 @@
+<!doctype html>
+
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>pets'T</title>
+        <link rel="shortcut icon" href="images/sub/favicon-16x16.png">
+        <!--opengraph-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="pets'T">
+        <meta property="og:url" content="http://codnjs3715.dothome.co.kr">
+        <meta property="og:image" content="images/sub/img_sub_p.png">
+        <meta property="og:description" content="pets'T">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        
+        <div id="head">
+            <header id="header">
+                <h1><a href="#"><img src="images/header/main_logo.png" alt="로고이미지"></a></h1>
+                <ul id="gnb">
+                    <li><a href="#">홈</a>
+                        
+                    </li>
+                    <li><a href="#"><button onclick="moveProducts()">서비스</button></a>
+                        
+                    </li>
+                    <li><a href="#"><button onclick="moveFare()">요금안내</button></a>
+                    
+                    </li>
+                    <li><a href="#"><button onclick="moveGuide()">이용가이드</button></a>
+                    
+                    </li>
+                    <li><a href="sub.html"><button onclick="moveBenefit()">기사모집</button></a>
+                    
+                    </li>
+                    <li><a href="#"><button onclick="moveRecruitment()">펫택시혜택</button></a></li>
+                </ul>
+              
+            </header>
+        </div>
+
+
+       
+
+
+        <section id="main_visual">
+            <ul class="visual">
+                <li class="mv1">
+                    <a href="#">
+                        <p class="mv_txt1">
+                            walwal과 함께!
+                        </p>
+                        <p class="mv_txt2">
+                            반려견을 위한 프리미엄 라이프스타일
+                        </p>
+                    </a>
+                </li>
+
+                <li class="mv2">
+                    <a href="#">
+                        <p class="mv_txt1">
+                           WALWAL PREMIUM PET LIFESTYLE
+                        </p>
+                        <p class="mv_txt2">
+                            오픈임박
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="products">
+            <h2>Pet's T서비스안내</h2>
+            <ul class="product_list">
+                <li>
+                    <p class="thumbnail"><img src="main/main_img_menu.png" alt="택시01" onclick="imgPop();"></p>
+                    <p class="product_name"">Pet Total Service</p>
+                    
+                </li>
+                <li>
+                    <p class="thumbnail"><img src="main/main_img_menu2.png" alt="택시02" onclick="imgPop2();"></p>
+                    <p class="product_name">Education Training</p>
+                    
+                </li>
+                <li>
+                    <p class="thumbnail"><img src="main/main_img_menu3.png" alt="택시03" onclick="imgPop3();"></p>
+                    <p class="product_name">On/Off Line Contents</p>
+                    
+                </li>
+
+                <li>
+                    <p class="thumbnail"><img src="main/main_img_menu4.png" alt="택시04" onclick="imgPop4();"></p>
+                    <p class="product_name">1234</p>
+                    
+                </li>
+            </ul>
+        </section>
+
+        <section id="driver">
+            <h2>펫츠'티 드라이버모집</h2>
+            <p>반려견도 유치원을 다녀야합니다!
+            </p>
+            <p><a href="sub.html">전체보기</a></p>
+        </section>
+
+        <section id="pet">
+            <article class="pet_tit">
+                <h2>Pet's T NEWS</h2>
+                <p class="desc">WALWAL유치원의 시설안내</p>
+                <p class="view"><a onclick="allBenefitPop();">전체보기 &rarr;</a></p>
+            </article>
+
+            <ul class="pet_list">
+                <li><a href="#"><img src="main/main_img_menu2.png" alt="택시1"></a></li>
+                <li><a href="#"><img src="main/main_img_menu2.png" alt="택시2"></a></li>
+                <li><a href="#"><img src="main/main_img_menu3.png" alt="택시3"></a></li>
+            </ul>
+        </section>
+
+
+        <div class="foot">
+            <footer id="footer">
+                <p class="footer_logo"><img src="images/header/main_logo.png" alt="왈왈 로고 이미지"></p>
+               
+
+                <address>
+                    (주)ㅡㅡㅡ<br>
+                    주소 :               사업자등록번호 :<br>
+                    대표이사 : 통신판매업신고번호 :
+                </address>
+
+                
+                <p class="text">상담전화</p>
+                <p class="number">070-4417-0121</p>
+            </footer>
+        </div>
+        
+<!-- 혜택 -->
+        <div id="popUp_id" class = "popUp_none">
+            <img src="main/ev_2.png" alt="전체" onclick="imgPop();"> 
+            <p class="close">
+                <img src="images/sub/btn_close.jpg" alt="닫기" onclick="imgPop();">
+            </p>
+        </div>
+
+        <div id="popUp_id2" class = "popUp_none">
+            <img src="main/ev_3.png" alt="전체" onclick="imgPop2();"> 
+            <p class="close">
+                <img src="images/sub/btn_close.jpg" alt="닫기" onclick="imgPop2();">
+            </p>
+        </div>
+        <div id="popUp_id3" class = "popUp_none">
+            <img src="main/ev_4.png" alt="전체" onclick="imgPop3();"> 
+            <p class="close">
+                <img src="images/sub/btn_close.jpg" alt="닫기" onclick="imgPop3();">
+            </p>
+        </div>
+        <div id="popUp_id4" class = "popUp_none">
+            <img src="main/ev_1.png" alt="전체" onclick="imgPop4();"> 
+            <p class="close">
+                <img src="images/sub/btn_close.jpg" alt="닫기" onclick="imgPop4();">
+            </p>
+        </div>
+        
+<!-- 혜택 모두 보기 -->
+        <div id = "seeAllId" class="seeAllClass_none">
+            <p class="close_1">
+                <img src="images/sub/btn_close.jpg" alt="닫기" onclick="allBenefitPop();">
+            </p>
+            <div class="slidebox">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <ul class="slidelist">
+                    <li class="slideitem">
+                        <a><img src="./main/ev_1.png"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="./main/ev_1.png"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="./main/ev_1.png"></a>
+                    </li>
+                    <li class="slideitem">
+                        <a><img src="./main/ev_1.png"></a>
+                    </li>
+                    
+                </ul>
+                <div class="slide-control">
+                    <div class="control01">
+                        <label for="slide04" class="prev"></label>
+                        <label for="slide02" class="next"></label>
+                    </div>
+                    <div class="control02">
+                        <label for="slide01" class="prev"></label>
+                        <label for="slide03" class="next"></label>
+                    </div>
+                    <div class="control03">
+                        <label for="slide02" class="prev"></label>
+                        <label for="slide04" class="next"></label>
+                    </div>
+                    <div class="control04">
+                        <label for="slide03" class="prev"></label>
+                        <label for="slide01" class="next"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+    </body>
+
+</html>
